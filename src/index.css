@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities */
+@layer base {
+  html, body, #root { height: 100%; }
+  body {
+    /* Vibrant layered gradient background */
+    background:
+      radial-gradient(800px 400px at 10% -10%, theme('colors.accent')/0.15, transparent 60%),
+      radial-gradient(700px 300px at 100% 10%, theme('colors.primary')/0.18, transparent 60%),
+      linear-gradient(180deg, #0a0f1f 0%, #0b1023 100%);
+  }
+}
+
+@layer components {
+  .container-padding { @apply px-4 sm:px-6 lg:px-8; }
+  .section { @apply container-padding max-w-6xl mx-auto py-16; }
+  .badge { @apply inline-block bg-white/5 border border-white/10 text-slate-100 px-3 py-1 rounded-full text-sm backdrop-blur hover:border-primary/40 transition; }
+  .btn-primary { @apply px-5 py-2 rounded-md bg-gradient-to-r from-primary to-cyan-400 text-dark font-semibold shadow-glow hover:opacity-95 transition; }
+  .btn-outline { @apply px-5 py-2 rounded-md border border-white/15 text-white hover:border-primary/50 hover:text-primary transition; }
+  .card { @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl hover:border-primary/40 transition shadow-glow; }
+}
