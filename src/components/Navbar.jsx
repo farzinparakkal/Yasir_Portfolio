@@ -13,7 +13,7 @@ export default function Navbar({ name }) {
   return (
     <header className="sticky top-0 z-50 backdrop-blur bg-dark/50 border-b border-white/10">
       <nav className="section py-4 flex items-center justify-between">
-        <a href="#about" className="font-semibold tracking-tight text-slate-100 hover:text-primary transition">{name.split(' ')[0]}<span className="text-primary">.</span></a>
+        <a href="#about" className="font-semibold tracking-tight text-slate-100 hover:text-primary transition">{name.split(' ')[1]}<span className="text-primary">.</span></a>
 
         <button className="sm:hidden px-2 py-1 border border-white/15 rounded-md hover:border-primary/40 transition" onClick={() => setOpen(o => !o)} aria-label="Toggle Menu">
           <span className="i-material-symbols-menu text-xl">≡</span>
