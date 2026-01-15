@@ -8,7 +8,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/yasir-ali-30aab7309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   // Public CV file path (place the file in project /public)
   resume: '/Yasirali_resume.pdf',
-  photo: '/profile_photo1.jpeg',
+  photo: '/Yasir_.jpg',
   summary:
     'Aspiring DevOps Engineer with hands-on experience in Linux, Docker, Git, Ansible, and AWS through projects and training. Passionate about automation, cloud computing, and continuous learning. Eager to contribute to real-world teams and grow in a dynamic environment.',
   skills: {
